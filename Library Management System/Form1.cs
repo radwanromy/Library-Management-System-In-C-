@@ -66,8 +66,28 @@ namespace Library_Management_System
                 query = "select * from books where Name = '" + txtBName.Text + "'";
                 DataSet ds = dss.getData(query);
                 dataGridView2.DataSource = ds.Tables[0];
+                label1.Visible = false;
+                txtBName.Visible = false;
+                btnSearch.Visible = false;
+                label2.Visible = false;
+                dataGridView1.Visible = false;
+                button1.Visible = true;
+                label3.Visible = true;
+                dataGridView2.Visible = true;
 
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label1.Visible = true;
+            txtBName.Visible = true;
+            btnSearch.Visible = true;
+            label2.Visible = true;
+            dataGridView1.Visible = true;
+            button1.Visible = false;
+            label3.Visible = false;
+            dataGridView2.Visible = false;
         }
     }
 }

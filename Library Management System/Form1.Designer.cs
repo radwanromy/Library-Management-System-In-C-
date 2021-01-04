@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.txtBName = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -38,6 +39,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -56,7 +58,7 @@
             // txtBName
             // 
             this.txtBName.Font = new System.Drawing.Font("Lucida Handwriting", 20.25F, System.Drawing.FontStyle.Bold);
-            this.txtBName.Location = new System.Drawing.Point(382, 49);
+            this.txtBName.Location = new System.Drawing.Point(387, 46);
             this.txtBName.Name = "txtBName";
             this.txtBName.Size = new System.Drawing.Size(539, 45);
             this.txtBName.TabIndex = 1;
@@ -78,7 +80,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(228, 152);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(881, 190);
+            this.dataGridView1.Size = new System.Drawing.Size(881, 435);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -95,21 +97,36 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lucida Handwriting", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(541, 356);
+            this.label3.Font = new System.Drawing.Font("Lucida Handwriting", 30.25F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(498, 45);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(217, 36);
+            this.label3.Size = new System.Drawing.Size(323, 53);
             this.label3.TabIndex = 5;
             this.label3.Text = "Book Details";
+            this.label3.Visible = false;
             // 
             // dataGridView2
             // 
             this.dataGridView2.BackgroundColor = System.Drawing.Color.MediumSpringGreen;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(228, 415);
+            this.dataGridView2.Location = new System.Drawing.Point(228, 152);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(881, 190);
+            this.dataGridView2.Size = new System.Drawing.Size(881, 435);
             this.dataGridView2.TabIndex = 6;
+            this.dataGridView2.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Font = new System.Drawing.Font("Lucida Handwriting", 20.25F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(1003, 42);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(79, 56);
+            this.button1.TabIndex = 7;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -117,6 +134,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1317, 707);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -146,6 +164,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
